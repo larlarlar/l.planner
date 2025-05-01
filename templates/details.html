@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .task-details {
+            margin: 20px 0;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .task-title {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .task-description {
+            margin-bottom: 20px;
+            white-space: pre-line;
+        }
+        .task-status {
+            font-style: italic;
+            color: #666;
+        }
+        .back-link {
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+            color: #4CAF50;
+        }
+    </style>
+</head>
+<body>
+    <div class="task-details">
+        <div class="task-title">{{ task.title }}</div>
+        <div class="task-status">Status: {% if task.completed %}Completed{% else %}Pending{% endif %}</div>
+        <div class="task-description">
+            {% if task.description %}
+                {{ task.description }}
+            {% else %}
+                No description provided.
+            {% endif %}
+        </div>
+    </div>
+    <a href="{{ url_for('index') }}" class="back-link">← Back to tasks</a>
+</body>
+</html>
