@@ -15,5 +15,4 @@ A simple web-based task management application built with Flask.
 
 ## Usage
 Access the application at `http://localhost:5000`
-
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://github.com/larlarlar/l.planner)
