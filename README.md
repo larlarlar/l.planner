@@ -11,7 +11,7 @@ A simple web-based task management application built with Flask.
 ## Installation
 1. Clone the repository
 2. Install dependencies: `pip install -r requirements.txt`
-3. Run the app: `python app.py`
+3. Run the app: `python planner.py`
 
 ## Usage
 Access the application at `http://localhost:5000`
